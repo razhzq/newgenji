@@ -1,0 +1,315 @@
+    html,
+    body {
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        background: #121212;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    section {
+        transform: translateY(115px);
+    }
+    
+    section#banner {
+        padding-top: 0;
+        transform: translateY(90px);
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+    }
+    
+    .text-pink {
+        color: rgb(233, 68, 117) !important;
+    }
+    
+    .text-pink-50 {
+        color: rgb(255, 155, 216) !important;
+    }
+    
+    .text-blue {
+        color: rgb(0, 172, 237) !important;
+    }
+    
+    .text-indigo {
+        color: rgb(114, 137, 218) !important;
+    }
+    
+    .bg-pink {
+        background-color: rgb(233, 68, 117) !important;
+    }
+    
+    .bg-pink-50 {
+        background-color: rgb(255, 155, 216) !important;
+    }
+    
+    .bg-blue {
+        background-color: rgb(0, 172, 237) !important;
+    }
+    
+    .bg-indigo {
+        background-color: rgb(114, 137, 218) !important;
+    }
+    
+    .social-link {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .copyClipboad {
+        width: 90%;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px black;
+    }
+    
+    .genji-story-img img {
+        border-radius: 25px;
+    }
+    
+    .slider-wapper {
+        width: calc(400px*13);
+        animation: scroll 30s linear infinite;
+    }
+    
+    .slider-wapper:hover {
+        animation-play-state: paused;
+    }
+    
+    .slider {
+        width: 400px;
+    }
+    
+    .slider img {
+        width: 400px;
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(calc(-400px * 10));
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    .accordion .accordion-item {
+        border-bottom: 1px solid;
+    }
+    
+    #accordion-item {
+        background: none !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+    
+    .accordion-item button {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 1em 0;
+        font-size: 1.15rem;
+        font-weight: 400;
+        border: none;
+        background: none;
+        outline: none;
+    }
+    
+    .accordion-item button:hover,
+    .accordion-item button:focus {
+        cursor: pointer;
+    }
+    
+    .accordion-item button::after {
+        cursor: pointer;
+        border: 1px solid;
+    }
+    
+    .accordion-title {
+        color: #fff;
+        padding: 1em 1.5em 1em 0;
+    }
+    
+    .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+        color: #fff;
+    }
+    
+    .icon::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+    }
+    
+    .icon::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+    }
+    
+    .icon button::after {
+        width: 0;
+    }
+    
+    .accordion-item button[aria-expanded='true']+.accordion-content {
+        opacity: 1;
+        max-height: 10em;
+        transition: all 0.5s linear;
+        will-change: opacity, max-height;
+    }
+    
+    .accordion-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+    }
+    
+    .accordion-content p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+    }
+    
+    .team-img {
+        width: 350px;
+        height: auto;
+        box-shadow: 0px 8px 10px 4px #212529;
+    }
+    
+    #timer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        line-height: 1;
+        padding: 20px;
+        font-size: 40px;
+        font-weight: 300;
+        transform: translateY(-90px);
+    }
+    
+    .timer-span {
+        display: block;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+    }
+    
+    #days {
+        font-size: 65px;
+        color: #fff;
+    }
+    
+    #hours {
+        font-size: 65px;
+        color: #f07c22;
+    }
+    
+    #minutes {
+        font-size: 65px;
+        color: #f6da74;
+    }
+    
+    #seconds {
+        font-size: 35px;
+        color: #abcd58;
+    }
+    #tbd{
+       font-size: 65px; 
+    }
+    .whitepaper {
+        margin-top: -50px;
+    }
+    
+    @media screen and (min-width:1023px) {
+        #timer {
+            transform: translateY(-115px);
+        }
+        .timer-span {
+            display: block;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+        #days {
+            font-size: 100px;
+            color: #fff;
+        }
+        #hours {
+            font-size: 100px;
+            color: #f07c22;
+        }
+        #minutes {
+            font-size: 100px;
+            color: #f6da74;
+        }
+        #seconds {
+            font-size: 50px;
+            color: #abcd58;
+        }
+        #tbd{
+            font-size: 100px; 
+        }
+        .whitepaper {
+            margin-top: 0px;
+        }
+    }
