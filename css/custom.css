@@ -1,7 +1,13 @@
+    
+    @import url('https://rsms.me/inter/inter.css');
+    @supports (font-variation-settings: normal) {
+        html { font-family: 'Inter var', sans-serif; }
+      }
+
     html,
     body {
         font-weight: 500;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #ffffff;
         background: #121212;
         width: 100%;
@@ -317,6 +323,6 @@
     }
 
     #asia {
-        margin-left: 178px;
+        margin-left: 185px;
         color: #fff;
     }
