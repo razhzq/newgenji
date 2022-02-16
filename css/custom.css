@@ -42,6 +42,8 @@
     section#banner {
         padding-top: 0;
         transform: translateY(90px);
+        margin-left: 17px;
+        margin-top: 5px;
     }
     
     .navbar {
